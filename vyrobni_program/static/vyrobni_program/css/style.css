@@ -1,0 +1,34 @@
+li a {
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+    padding: 0px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.bgimage {
+    background-color: #0c1927;
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+}
+footer {
+    background-color: #0c1927;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    overflow:hidden;
+    color: white
+}
+
+
+
+.logo{
+  color: #ffffff;
+}

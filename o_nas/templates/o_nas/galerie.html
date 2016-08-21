@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta  charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static "vyrobni_program/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "vyrobni_program/css/style.css" %}">
+    <title>OSKON</title>
+</head>
+
+<header class="bgimage">
+    <div class="container">
+        <h1 class="logo">LOGO OSKON</h1>
+    </div>
+</header
+<body>
+  <nav class="navbar navbar-default">
+  <div class="container">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsemenu">
+      <ul class="nav navbar-nav">
+        <li><a href="{% url 'o_nas:index' %}">Uvod</a></li>
+        <li>  <a href="#" class="dropdown-toggle"
+          data-toggle="dropdown" role="button"
+          aria-haspopup="True"
+          aria-expanded="false">Vyrobni program<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Svarovani</a></li>
+            <li><a href="#">Obrabeni</a></li>
+            <li><a href="#">Konstrukce</a></li>
+          </ul>
+        </li>
+          <li><a href="{% url 'vyrobni_program:vyrobni_program' %}">Vyrobni program</a></li>
+          <li><a href="{% url 'o_nas:galerie' %}">Galerie</a></li>
+          <li><a href="#">Stroje</a></li>
+          <li><a href="{% url 'o_nas:kontakt' %}">Kontakt</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+  </nav>
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col-md-4">
+
+  <h1>galerie</h1>
+  <p>
+  Quisque quam ex, aliquam id ligula aliquet, mollis sodales eros. Duis eros ante, interdum in odio ac, fringilla dignissim nisl.
+  Aliquam tempor at quam nec laoreet. Curabitur libero massa, mollis et nunc in, placerat suscipit dui. Ut a convallis felis.
+  Phasellus pellentesque metus sed dui posuere lobortis. Aliquam ultrices porta velit, in pulvinar ante finibus vitae.
+  Suspendisse semper fermentum lectus at sagittis. Proin placerat quis eros nec faucibus. Morbi gravida ligula laoreet,
+  fringilla velit in, pulvinar purus. Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
+  luctus ligula.</p>
+</div>
+<div class="col-sm-6 col-md-4">
+  <h1>Headline</h1>
+  <p>
+  Quisque quam ex, aliquam id ligula aliquet, mollis sodales eros. Duis eros ante, interdum in odio ac, fringilla dignissim nisl.
+  Aliquam tempor at quam nec laoreet. Curabitur libero massa, mollis et nunc in, placerat suscipit dui. Ut a convallis felis.
+  Phasellus pellentesque metus sed dui posuere lobortis. Aliquam ultrices porta velit, in pulvinar ante finibus vitae.
+  Suspendisse semper fermentum lectus at sagittis. Proin placerat quis eros nec faucibus. Morbi gravida ligula laoreet,
+  fringilla velit in, pulvinar purus. Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
+  luctus ligula.</p>
+</div>
+<div class="col-sm-6 col-md-4">
+  <h1>Headline</h1>
+  <p>
+  Quisque quam ex, aliquam id ligula aliquet, mollis sodales eros. Duis eros ante, interdum in odio ac, fringilla dignissim nisl.
+  Aliquam tempor at quam nec laoreet. Curabitur libero massa, mollis et nunc in, placerat suscipit dui. Ut a convallis felis.
+  Phasellus pellentesque metus sed dui posuere lobortis. Aliquam ultrices porta velit, in pulvinar ante finibus vitae.
+  Suspendisse semper fermentum lectus at sagittis. Proin placerat quis eros nec faucibus. Morbi gravida ligula laoreet,
+  fringilla velit in, pulvinar purus. Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
+  luctus ligula.</p>
+</div>
+</div>
+</div>
+<footer>
+    <div class="container">
+      <p>
+        OSKON s.r.o. 2016
+      </p>
+    </div>
+</footer>
+<script src="{% static "vyrobni_program/js/jquery-3.1.0.min.js" %}"></script>
+<script src="{% static "vyrobni_program/js/bootstrap.min.js" %}"></script>
+<script src="{% static "vyrobni_program/js/script.js" %}"></script>
+</body>
+
+</html>
