@@ -27,8 +27,48 @@ footer {
     color: white
 }
 
-
-
 .logo{
   color: #ffffff;
+}
+
+#MainImages {
+    width: 300px;
+    height: 200px;
+}
+
+#MainImages img {
+
+    height: 100%;
+    width: 100%
+}
+#Fullscreen {
+
+    width: 100%;
+
+    display: none;
+
+    position:fixed;
+
+    top: 3cm;
+
+    right:0;
+
+    bottom:0;
+
+    left:0;
+
+    /* I made a 50% opacity black tile background for this
+     div so it would seem more... modal-y*/
+
+    background: transparent;
+    z-index: 1;
+
+
+}
+#Fullscreen img{
+height: 50%;
+max-width: 100% auto;
+display: block;
+margin: 0 auto;
+}
 }

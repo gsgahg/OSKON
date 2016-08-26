@@ -1,52 +1,6 @@
-<!DOCTYPE html>
-{% load static %}
-<html>
-<head>
-    <meta  charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static "vyrobni_program/css/bootstrap.min.css" %}">
-    <link rel="stylesheet" type="text/css" href="{% static "vyrobni_program/css/style.css" %}">
-    <title>OSKON</title>
-</head>
+{% extends 'o_nas/base.html' %}
 
-<header class="bgimage">
-    <div class="container">
-        <h1 class="logo">LOGO OSKON</h1>
-    </div>
-</header
-<body>
-  <nav class="navbar navbar-default">
-  <div class="container">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsemenu">
-      <ul class="nav navbar-nav">
-        <li><a href="{% url 'o_nas:index' %}">Uvod</a></li>
-        <li>  <a href="#" class="dropdown-toggle"
-          data-toggle="dropdown" role="button"
-          aria-haspopup="True"
-          aria-expanded="false">Vyrobni program<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Svarovani</a></li>
-            <li><a href="#">Obrabeni</a></li>
-            <li><a href="#">Konstrukce</a></li>
-          </ul>
-        </li>
-          <li><a href="{% url 'vyrobni_program:vyrobni_program' %}">Vyrobni program</a></li>
-          <li><a href="{% url 'o_nas:galerie' %}">Galerie</a></li>
-          <li><a href="#">Stroje</a></li>
-          <li><a href="{% url 'o_nas:kontakt' %}">Kontakt</a></li>
-        </ul>
-
-    </div>
-
-  </div>
-  </nav>
+{% block content %}
 <div class="container">
 <div class="row">
 <div class="col-sm-12 col-md-12">
@@ -64,123 +18,122 @@
 </div>
 </div>
 
-<div class="row">
+<div class="row" style="padding-bottom: 0.4cm">
 
-  <table class="table table-hover">
-    <tbody>
-      <tr>
-        <th scope="row">
-          Nazev Spolecnosti
-        </th>
-        <td>
-          OSKON s.r.o.
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">
-          Sidlo
-        </th>
-        <td>
-          adresa kde je zaregistorvane sidlo, 153153 1231561 dfasfsdgfggfgaf
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">
-          Provozovna
-        </th>
-        <td>
-          adresa provozovny fsadas gdfg dsfg 5464564564g dfsg dsfgsdf
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">
-          ICO
-        </th>
-        <td>
-          45456 456456 4564156
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">
-          DIC
-        </th>
-        <td>
-          45456 456456 4564156
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">
-          ICO
-        </th>
-        <td>
-          45456 456456 4564156
-        </td>
-    </tbody>
-  </table>
-</div>
+  <div class="col-md-6">
+    <table class="table table-hover">
+      <tbody>
+        <tr>
+          <th scope="row">
+            Nazev Spolecnosti
+          </th>
+          <td>
+            OSKON s.r.o.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            Sidlo
+          </th>
+          <td>
+            adresa kde je zaregistorvane sidlo, 153153 1231561 dfasfsdgfggfgaf
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            Provozovna
+          </th>
+          <td>
+            adresa provozovny fsadas gdfg dsfg 5464564564g dfsg dsfgsdf
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            ICO
+          </th>
+          <td>
+            45456 456456 4564156
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            DIC
+          </th>
+          <td>
+            45456 456456 4564156
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            ICO
+          </th>
+          <td>
+            45456 456456 4564156
+          </td>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <div class="thumbail">
+      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div class="thumbnail" style='overflow:hidden;height:277px;max-width: auto;'><div id='gmap_canvas' style='height:277px;max-width: auto;'></div><div><small><a href="http://www.embedgooglemaps.com">Generate your Google map here, quick and easy!</a></small></div><div><small><a href="https://top10geeks.com/top-10-best-running-shoes-men-2016/">With top10geeks.com, you can read everything about the best running shoes for men for the year 2016. We give insights in what is the best shoe to buy, by looking at it's qualities and value for money. However, it is important that you always try the shoe for yourself: you might have different preferences than what we are recommending. With our tips of the best running shoes for men, you cannot go wrong!</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(50.10671223402563,14.401405037109392),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.10671223402563,14.401405037109392)});infowindow = new google.maps.InfoWindow({content:'<strong>mapa</strong><br>czech republic, prague, Technická 4, 166 07<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 
-<div class="row">
-  <table class="table table-hover">
-    <thead>
-      <th>
-        Jmeno
-      </th>
-      <th>
-        Funkce
-      </th>
-      <th>
-        Telefon
-      </th>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">
-          Tomas Panacek
-        </th>
-        <td>
-          Zakaznicky servis
-        </td>
-        <td>
-          5156 1561 11
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">
-          Lukas Panacek
-        </th>
-        <td>
-          Konstruovani
-        </td>
-        <td>
-          5156 3453453 11
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">
-          Martin Panacek
-        </th>
-        <td>
-          Obrabeni
-        </td>
-        <td>
-          552433453156 1561 11
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-</div>
-</div>
-<<footer>
-    <div class="container">
-      <p>
-        OSKON s.r.o. 2016
-      </p>
     </div>
-</footer>
-<script src="{% static "vyrobni_program/js/jquery-3.1.0.min.js" %}"></script>
-<script src="{% static "vyrobni_program/js/bootstrap.min.js" %}"></script>
-<script src="{% static "vyrobni_program/js/script.js" %}"></script>
-</body>
 
-</html>
+  </div>
+</div>
+  <div class="row">
+    <table class="table table-hover">
+      <thead>
+        <th>
+          Jmeno
+        </th>
+        <th>
+          Funkce
+        </th>
+        <th>
+          Telefon
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">
+            Tomas Panacek
+          </th>
+          <td>
+            Zakaznicky servis
+          </td>
+          <td>
+            5156 1561 11
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            Lukas Panacek
+          </th>
+          <td>
+            Konstruovani
+          </td>
+          <td>
+            5156 3453453 11
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            Martin Panacek
+          </th>
+          <td>
+            Obrabeni
+          </td>
+          <td>
+            552433453156 1561 11
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+</div>
+</div>
+{% endblock %}
