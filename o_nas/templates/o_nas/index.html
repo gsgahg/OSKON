@@ -14,11 +14,8 @@
           <div class="item active">
             <img src="media/carousel1.jpg">
             <div class="carousel-caption">
-              <h3>Obrabeni</h3>
-              <p>
-                Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
-                luctus ligula.
-              </p>
+              <h4>Obrabeni</h4>
+
 
             </div>
           </div>
@@ -26,10 +23,7 @@
             <img src="media/5ir6oKY.png">
             <div class="carousel-caption">
               <h3>Konstrukce</h3>
-              <p>
-                Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
-                luctus ligula.
-              </p>
+
 
             </div>
           </div>
@@ -37,10 +31,6 @@
             <img src="media/carousel2.jpg">
             <div class="carousel-caption">
               <h3>Svarovani</h3>
-              <p>
-                Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
-                luctus ligula.
-              </p>
 
             </div>
           </div>
@@ -59,7 +49,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-md-6 panel">
-        <h1 style="padding-bottom: 0.5cm">Headline</h1>
+        <h1>Headline</h1>
         <p>
           Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
           luctus ligula.Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
@@ -72,22 +62,26 @@
           luctus ligula.
         </p>
         <p>
-          <a class="btn btn-link" href="{% url 'o_nas:kontakt'%}">Kontaktujte nas</a>
+          luctus ligula.Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
+          luctus ligula.Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
+          luctus ligula.Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
+          luctus ligula.
         </p>
+
 
     </div>
 
     <div class="col-xs-12 col-md-6">
         <div class="container-fluid">
-          <div class="row">
+          <div class="row" id="x">
 
 
-                <h4>Vyrobni program</h4>
+                <a href="{% url 'vyrobni_program:vyrobni_program'%}"><h4>Vyrobni program</h4></a>
                 <p>
                   Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
                   luctus ligula.Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean
                 </p>
-                <a class="btn btn-link" href="{% url 'vyrobni_program:vyrobni_program'%}">Prejit na vyrobni program</a>
+                <a class="btn btn-primary btn-xs" href="{% url 'vyrobni_program:vyrobni_program'%}">Prejit na kategorie <span class="glyphicon glyphicon glyphicon-cog" aria-hidden="true"></span></a>
 
 
           </div>
@@ -95,15 +89,15 @@
 
 
             <div class="container-fluid">
-              <div class="row">
+              <div class="row" id="x">
 
 
-                    <h4>Galerie</h4>
+                  <a href="{% url 'o_nas:galerie'%}"><h4 href="{% url 'o_nas:galerie'%}">Galerie</h4></a>
                     <p>
                       Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
                       luctus ligula.
                     </p>
-                    <a class="btn btn-link" href="{% url 'o_nas:galerie'%}">Prejit do galerie</a>
+                    <a class="btn btn-primary btn-xs" href="{% url 'o_nas:galerie'%}">Prejit do galerie <span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
 
 
 
@@ -114,15 +108,15 @@
 
 
             <div class="container-fluid">
-              <div class="row">
+              <div class="row" id="x">
 
 
-                    <h4>Kontakt</h4>
+                    <a href="{% url 'o_nas:kontakt'%}"><h4>Kontakt</h4></a>
                     <p>
                       Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
                       luctus ligula.
                     </p>
-                    <a class="btn btn-link" href="{% url 'o_nas:kontakt'%}">Kontaktujte nas</a>
+                    <a class="btn btn-primary btn-xs" href="{% url 'o_nas:kontakt'%}">Kontaktujte nas  <span class="glyphicon glyphicon glyphicon-phone-alt" aria-hidden="true"></span></a>
 
 
 

@@ -7,13 +7,13 @@
     {% if list_of_categories %}
         {% for category in list_of_categories %}
         <div class="col-sm-6 col-md-4">
-  			<div class="thumbnail">
+  			<div class="thumbnail" id="index">
         <a href="{% url 'vyrobni_program:detail' category.id %}"><img style="height: 200px; width:400px" src="{{ category.image.url }}"></a>
             <div class="caption">
-  						<h3><a href="{% url 'vyrobni_program:detail' category.id %}">{{ category.name }}</a></h3>
+  						<h4><a style="color: #000000" href="{% url 'vyrobni_program:detail' category.id %}">{{ category.name }}</a></h4>
   						<p>{{ category.short_description }}</p>
 
-  							<a class="btn btn-default btn-block" href="{% url 'vyrobni_program:detail' category.id %}">Vice informaci</a>
+  							<a class="btn btn-primary btn-md" href="{% url 'vyrobni_program:detail' category.id %}"></span>Vice informaci</a>
   					</div>
         </div>
         </div>
