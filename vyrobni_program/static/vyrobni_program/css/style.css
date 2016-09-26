@@ -84,7 +84,6 @@ footer {
 .logo{
   color: #ffffff;
 }
-
 #MainImages {
     width: 300px;
     height: 200px;
@@ -103,13 +102,14 @@ footer {
 
     position:fixed;
 
-    top: 3cm;
+    top: 0.5cm;
 
     right:0;
 
     bottom:0;
 
     left:0;
+
 
     /* I made a 50% opacity black tile background for this
      div so it would seem more... modal-y*/
@@ -119,12 +119,10 @@ footer {
 
 }
 #Fullscreen img{
-height: 50%;
-max-width: 100% auto;
+height: 45%;
 display: block;
 margin: 0 auto;
 }
-
 
 nav.navbar.navbar-default {
   margin-bottom: 0px;
