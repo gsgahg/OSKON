@@ -1,7 +1,7 @@
 {% extends 'o_nas/base.html' %}
 
 {% block content %}
-<div class="content container" style="padding-bottom: 1.5cm">
+<div class="content container">
   <div class="row">
     <section class="col-sm-12">
       <div class="carousel slide" id="featured">
@@ -47,8 +47,8 @@
 </div>
 
 <div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-md-6 panel">
+  <div class="row" id="xy">
+    <div class="col-xs-12 col-md-6">
         <h1>Headline</h1>
         <p>
           Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
@@ -72,7 +72,7 @@
     </div>
 
     <div class="col-xs-12 col-md-6">
-        <div class="container-fluid">
+        <div class="container-fluid" id="index_div">
           <div class="row" id="x">
 
 
@@ -81,14 +81,14 @@
                   Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
                   luctus ligula.Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean
                 </p>
-                <a class="btn btn-primary btn-xs" href="{% url 'vyrobni_program:vyrobni_program'%}">Prejit na kategorie <span class="glyphicon glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+                <a class="btn btn-primary btn-xs" href="{% url 'vyrobni_program:vyrobni_program'%}">Vice info</a>
 
 
           </div>
         </div>
 
 
-            <div class="container-fluid">
+            <div class="container-fluid" id="index_div">
               <div class="row" id="x">
 
 
@@ -97,7 +97,7 @@
                       Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
                       luctus ligula.
                     </p>
-                    <a class="btn btn-primary btn-xs" href="{% url 'o_nas:galerie'%}">Prejit do galerie <span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                    <a class="btn btn-primary btn-xs" href="{% url 'o_nas:galerie'%}">Vice info</a>
 
 
 
@@ -107,7 +107,7 @@
 
 
 
-            <div class="container-fluid">
+            <div class="container-fluid" id="index_div">
               <div class="row" id="x">
 
 
@@ -116,7 +116,7 @@
                       Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
                       luctus ligula.
                     </p>
-                    <a class="btn btn-primary btn-xs" href="{% url 'o_nas:kontakt'%}">Kontaktujte nas  <span class="glyphicon glyphicon glyphicon-phone-alt" aria-hidden="true"></span></a>
+                    <a class="btn btn-primary btn-xs" href="{% url 'o_nas:kontakt'%}">Vice info</a>
 
 
 

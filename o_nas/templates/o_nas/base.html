@@ -9,12 +9,6 @@
     <link rel="stylesheet" type="text/css" href="{% static "vyrobni_program/css/style.css" %}">
     <title>OSKON</title>
 </head>
-
-<header class="bgimage">
-    <div class="container">
-        <h1 class="logo">OSKON</h1>
-    </div>
-</header
 <body>
   <nav class="navbar navbar-default">
   <div class="container">
@@ -23,13 +17,16 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
+
     </button>
+    <div class="navbar-brand"> <a style="color:#ffffff" href="{% url 'o_nas:index' %}">OSKON</a>
+    </div>
     <div class="collapse navbar-collapse" id="collapsemenu">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
         <li><a href="{% url 'o_nas:index' %}">Uvod</a></li>
 
         </li>
-          <li><a href="{% url 'vyrobni_program:vyrobni_program' %}">Vyrobni program</a></li>
+          <li><a class="color" href="{% url 'vyrobni_program:vyrobni_program' %}">Vyrobni program</a></li>
           <li><a href="{% url 'o_nas:galerie' %}">Galerie</a></li>
           <li><a href="#">Stroje</a></li>
           <li><a href="{% url 'o_nas:about' %}">O Spolecnosti</a></li>

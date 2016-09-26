@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="content container" style="padding-top: 1cm">
-    <div class="row">
+    <div class="row" id="xz">
     {% if list_of_categories %}
         {% for category in list_of_categories %}
         <div class="col-sm-6 col-md-4">
@@ -13,7 +13,7 @@
   						<h4><a style="color: #000000" href="{% url 'vyrobni_program:detail' category.id %}">{{ category.name }}</a></h4>
   						<p>{{ category.short_description }}</p>
 
-  							<a class="btn btn-primary btn-md" href="{% url 'vyrobni_program:detail' category.id %}"></span>Vice informaci</a>
+  							<a class="btn btn-primary btn-xs" href="{% url 'vyrobni_program:detail' category.id %}"></span>Vice informaci</a>
   					</div>
         </div>
         </div>

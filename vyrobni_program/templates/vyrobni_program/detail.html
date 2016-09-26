@@ -7,7 +7,7 @@
     <div class="row" style="padding: 0.2cm">
 
         <a href="{% url 'vyrobni_program:vyrobni_program' %}">
-        <button class="btn btn-primary btn-md">Zpet na vyrobni program</button>
+        <button class="btn btn-primary btn-md"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>  Zpet na vyrobni program</button>
       </a>
 
 
@@ -36,7 +36,7 @@
     </div>
 
     <div class="content container">
-      <div class="row">
+      <div class="row" id="xz">
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-              <div class="thumbnail" id="MainImages">
+              <div class="thumbnail" id="MainImages" style="max-width:500px">
                 <img class="myImg img-responsive" src="{{ picture.picture.url }}">
                 </div>
                 <div id="Fullscreen">
