@@ -8,7 +8,7 @@
         {% for category in list_of_categories %}
         <div class="col-sm-6 col-md-4">
   			<div class="thumbnail" id="index">
-        <a href="{% url 'vyrobni_program:detail' category.id %}"><img style="height: 200px; width:400px" src="{{ category.image.url }}"></a>
+        <a href="{% url 'vyrobni_program:detail' category.id %}"><img style="height: 200px; width:356px" src="{{ category.image.url }}"></a>
             <div class="caption">
   						<h4><a style="color: #000000" href="{% url 'vyrobni_program:detail' category.id %}">{{ category.name }}</a></h4>
   						<p>{{ category.short_description }}</p>

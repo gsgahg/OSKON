@@ -3,65 +3,39 @@
 {% block content %}
   </nav>
   <div class="content container">
-
     <div class="row" style="padding: 0.2cm">
-
         <a href="{% url 'vyrobni_program:vyrobni_program' %}">
         <button class="btn btn-primary btn-md"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>  Zpet na vyrobni program</button>
       </a>
-
-
     </div>
-
-
-
   </div>
-
-
   <div class="content container">
-
     <div class="row">
       <div class="panel panel-default">
         <div class="panel-heading">
           <h2>{{ category.name }}</h2>
         </div>
         <div class="panel-body">
-          <p>{{ category.long_description}}</p>
-
+          {{ category.long_description|safe }}
         </div>
-
       </div>
-
     </div>
     </div>
-
     <div class="content container">
       <div class="row" id="xz">
-
-
-
-
           {% for picture in listofpictures %}
           <div class="col-sm-6 col-md-4">
-
-
-
-              <div class="thumbnail" id="MainImages" style="max-width:500px">
-                <img class="myImg img-responsive" src="{{ picture.picture.url }}">
-                </div>
+              <div class="thumbnail" id="MainImages">
+                <img class="myImg img-responsive" style="height: 200px; width: 356px" src="{{ picture.picture.url }}">
+                <div class="caption">
+                <p style="text-align: center; line-height: 10px">{{ picture.popis }}</p>
+              </div>
+              </div>
                 <div id="Fullscreen">
                   <img src="" alt="" />
                 </div>
-
-              </div>
-
+          </div>
           {% endfor %}
-
-
-
       </div>
-
     </div>
-
-
   {% endblock %}

@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^vyrobni_program/', include('vyrobni_program.urls')),
     url(r'', include('o_nas.urls')),
+    url(r'^ckeditor/', include('ckeditor_uploader.urls')),
 
 ]
 

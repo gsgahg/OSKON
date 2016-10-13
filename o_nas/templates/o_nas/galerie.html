@@ -5,9 +5,9 @@
   <div class="row">
     {% for i in list_of_images %}
       <div class="col-sm-6 col-md-4" id="galerie_item">
-        <div class="thumbnail" id="MainImages">
-          <img class="myImg img-responsive" src="{{ i.image.url }}">
-
+        <div class="thumbnail">
+          <img class="myImg img-responsive" style="height: 200px; width: 356px" src="{{ i.image.url }}">
+          <p>{{ picture.popis }}</p>
         </div>
         <div id="Fullscreen">
           <img src="" alt="" />

@@ -10,7 +10,7 @@
     <title>OSKON</title>
 </head>
 <body>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default" style="border-bottom: 1px solid">
   <div class="container">
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
       <span class="sr-only">Toggle navigation</span>
@@ -19,17 +19,18 @@
       <span class="icon-bar"></span>
 
     </button>
-    <div class="navbar-brand"> <a style="color:#ffffff" href="{% url 'o_nas:index' %}">OSKON</a>
+    <div class="navbar-brand"> <a href="{% url 'o_nas:index' %}"><img id="brand" src="/media/oskon_logo_2016_09_28.png"></a>
+
+
     </div>
     <div class="collapse navbar-collapse" id="collapsemenu">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="{% url 'o_nas:index' %}">Uvod</a></li>
+        <li><a href="{% url 'o_nas:index' %}">Úvod</a></li>
 
         </li>
-          <li><a class="color" href="{% url 'vyrobni_program:vyrobni_program' %}">Vyrobni program</a></li>
+          <li><a class="color" href="{% url 'vyrobni_program:vyrobni_program' %}">Výrobni program</a></li>
           <li><a href="{% url 'o_nas:galerie' %}">Galerie</a></li>
-          <li><a href="#">Stroje</a></li>
-          <li><a href="{% url 'o_nas:about' %}">O Spolecnosti</a></li>
+          <li><a href="{% url 'o_nas:reference' %}">Reference</a></li>
           <li><a href="{% url 'o_nas:kontakt' %}">Kontakt</a></li>
 
         </ul>
