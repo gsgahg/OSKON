@@ -1,0 +1,259 @@
+li a {
+}
+
+a.btn.btn-primary.btn-xs{
+  background-color: #ffffff;
+  font-weight: bold;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+a.btn.btn-primary.btn-md{
+  background-color: #ffffff;
+  font-weight: bold;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.btn.btn-primary.btn-md{
+  background-color: #ffffff;
+  font-weight: bold;
+  color: #000000;
+  border-color: #000000;
+}
+
+h1 {
+  font-family: Verdana;
+  font-size: 28px;
+}
+
+h3 {
+  font-family: Verdana;
+  font-size: 24px;
+}
+
+h4 {
+  font-family: Verdana;
+  font-size: 24px;
+}
+
+a {
+  font-family: verdana;
+  color: #333;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: None;
+}
+
+
+
+.btn-link {
+  color: #333;
+  font-weight: bold;
+}
+
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+    padding: 0px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.bgimage {
+    background-color: #ffffff;
+    background-position: center center;
+    background-size: cover;
+    height: 75px;
+}
+footer {
+    background-color: #0c1927;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    overflow:hidden;
+    color: white
+}
+
+.logo{
+  color: #ffffff;
+}
+#MainImages {
+}
+
+#MainImages img {
+
+    height: 100%;
+    width: 100%
+}
+#Fullscreen {
+
+    width: 100%;
+
+    display: none;
+
+    position:fixed;
+
+    top: 0.5cm;
+
+    right:0;
+
+    bottom:0;
+
+    left:0;
+
+
+    /* I made a 50% opacity black tile background for this
+     div so it would seem more... modal-y*/
+
+    background: transparent;
+    z-index: 1;
+
+}
+#Fullscreen img{
+height: 45%;
+display: block;
+margin: 0 auto;
+}
+
+nav.navbar.navbar-default {
+  margin-bottom: 0px;
+}
+
+
+.carousel slide{
+  width:100%;
+  max-height: 550px;
+}
+
+.carousel-inner{
+  max-height: 550px;
+}
+
+.item {
+  max-height: 550px;
+}
+
+div#x.row {
+  margin: 10px;
+}
+
+div.row p {
+  margin-bottom: 0px;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #000000;
+  line-height: 50px;
+}
+
+.navbar-default .navbar-nav>li>a:hover  {
+  color: #bfbfbf;
+}
+
+.navbar {
+  border: 0px;
+}
+
+div.content.container {
+  width: 100%;
+}
+
+.col-sm-12 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar-brand {
+}
+
+@media (max-width:760px){
+  .navbar-brand {
+    display: flex;
+    float: none;
+    line-height: 20px;
+  }
+  .navbar-default .navbar-nav>li>a {
+    line-height: 20px;
+  }
+  #brand {
+    width: 35px;
+    height: 40px;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width:980px){
+  div#x.row {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0.5cm;
+  }
+}
+
+#xy.row {
+  padding-top: 1cm;
+}
+
+div.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.page-header {
+  margin: 5px;
+}
+
+#galerie_item.col-sm-6.col-md-4 {
+  padding-top: 0.5cm;
+}
+
+p {
+  line-height: 26px;
+}
+
+a.btn.btn-primary.btn-xs:hover {
+  background-color: #12263b;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a.btn.btn-primary.btn-md:hover {
+  background-color: #12263b;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+button.btn.btn-primary.btn-md:hover {
+  background-color: #12263b;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#xz.row {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.navbar {
+  border-radius: 0 !important;
+}
+
+
+#index_div:hover {
+  border: 1px solid;
+  border-color: #878F91;
+  margin:-1px
+}
