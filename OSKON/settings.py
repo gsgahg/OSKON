@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'vyrobni_program',
     'o_nas',
     'ckeditor',
+    'form',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'

@@ -1,8 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from .models import Gallery, Reference
-from .forms import KontaktForm
+from form.models import Contact
+from form.forms import ContactForm
+from django.contrib import messages
 
 def index(request):
     template = loader.get_template('o_nas/index.html')
@@ -12,15 +14,14 @@ def index(request):
 def kontakt(request):
     template = loader.get_template('o_nas/kontakt.html')
     if request.method == 'POST':
-        form = KontaktForm(request.POST)
+        form = ContactForm(request.POST)
         if form.is_valid():
-            subject = form.cleaned_data['subject']
-            message = form.cleaned_data['message']
-            email = form.cleaned_data['email']
-            tel = form.cleaned_data['tel']
-            print('yay:)')
+            instance=form.save(commit=False)
+            instance.save()
+            messages.success(request, 'Thank you for your message.')
+            return HttpResponseRedirect('/kontakt/')
     else:
-        form = KontaktForm()
+        form = ContactForm()
     context = {'form':form}
     return render(request, 'o_nas/kontakt.html', context)
 

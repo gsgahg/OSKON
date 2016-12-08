@@ -3,25 +3,34 @@
 
 {% block content %}
 <div class="container">
-<div class="row">
-<div class="col-sm-12 col-md-12">
-  <div class="page-header" style="margin-bottom:1cm">
-    <h1>Kontaktujte nas</h1>
-    <p>
-    Quisque quam ex, aliquam id ligula aliquet, mollis sodales eros. Duis eros ante, interdum in odio ac, fringilla dignissim nisl.
-    Aliquam tempor at quam nec laoreet. Curabitur libero massa, mollis et nunc in, placerat suscipit dui. Ut a convallis felis.
-    Phasellus pellentesque metus sed dui posuere lobortis. Aliquam ultrices porta velit, in pulvinar ante finibus vitae.
-    Suspendisse semper fermentum lectus at sagittis. Proin placerat quis eros nec faucibus. Morbi gravida ligula laoreet,
-    fringilla velit in, pulvinar purus. Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
-    luctus ligula.</p>
-  </div>
+<div class="container">
+  <div class="row">
+  <div class="col-sm-12 col-md-12">
+    <div class="page-header" style="margin-bottom:1cm">
+      <h1>Kontaktujte nas</h1>
+      <p>
+      Quisque quam ex, aliquam id ligula aliquet, mollis sodales eros. Duis eros ante, interdum in odio ac, fringilla dignissim nisl.
+      Aliquam tempor at quam nec laoreet. Curabitur libero massa, mollis et nunc in, placerat suscipit dui. Ut a convallis felis.
+      Phasellus pellentesque metus sed dui posuere lobortis. Aliquam ultrices porta velit, in pulvinar ante finibus vitae.
+      Suspendisse semper fermentum lectus at sagittis. Proin placerat quis eros nec faucibus. Morbi gravida ligula laoreet,
+      fringilla velit in, pulvinar purus. Proin eros augue, pharetra quis eros ac, dignissim tempus felis. Aenean sit amet
+      luctus ligula.</p>
+    </div>
 
+  </div>
+  </div>
 </div>
-</div>
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} style="color:#00ff00" class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
 
 <div class="container">
   <div class="row" style="margin-bottom:1cm">
-    <div class="col-md-6" style="padding: 0px">
+    <div class="col-md-6" style="margin-bottom: 20px">
       <form action="" method="POST">
         {% csrf_token %}
         {{ form | crispy }}
@@ -29,7 +38,7 @@
       </form>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-6" style="margin-bottom: 20px">
       <div class="thumbail">
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiOnDSgDcIcwGjmVAyMZxRUtx6hUPOQf0">
         </script><div class="thumbnail" style='overflow:hidden;height:502px;max-width: auto;'>
@@ -59,59 +68,61 @@
 </div>
 
 
-  <div class="row">
-    <div  style="padding: 0px">
-      <table class="table table-hover">
-        <tbody>
-          <tr>
-            <th scope="row">
-              Nazev Spolecnosti
-            </th>
-            <td>
-              OSKON s.r.o.
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">
-              Sidlo
-            </th>
-            <td>
-              Quisque quam ex, aliquam id ligula aliquet, mollis sodales eros. Duis eros ante, interdum in odio ac, fringilla dignissim nisl.
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">
-              Provozovna
-            </th>
-            <td>
-              Quisque quam ex, aliquam id ligula aliquet, mollis sodales eros. Duis eros ante, interdum in odio ac, fringilla dignissim nisl.
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">
-              ICO
-            </th>
-            <td>
-              45456 456456 4564156
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">
-              DIC
-            </th>
-            <td>
-              45456 456456 4564156
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">
-              Telefon
-            </th>
-            <td>
-              45456 456456 4564156
-            </td>
-        </tbody>
-      </table>
+  <div class="container">
+    <div class="row">
+      <div  style="padding: 0px">
+        <table class="table table-hover">
+          <tbody>
+            <tr>
+              <th scope="row">
+                Nazev Spolecnosti
+              </th>
+              <td>
+                OSKON s.r.o.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Sidlo
+              </th>
+              <td>
+                Quisque quam ex, aliquam id ligula aliquet, mollis sodales eros. Duis eros ante, interdum in odio ac, fringilla dignissim nisl.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Provozovna
+              </th>
+              <td>
+                Quisque quam ex, aliquam id ligula aliquet, mollis sodales eros. Duis eros ante, interdum in odio ac, fringilla dignissim nisl.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                ICO
+              </th>
+              <td>
+                45456 456456 4564156
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                DIC
+              </th>
+              <td>
+                45456 456456 4564156
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                Telefon
+              </th>
+              <td>
+                45456 456456 4564156
+              </td>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 
