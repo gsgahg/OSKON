@@ -2,25 +2,34 @@
 
 {% block content %}
 
-<div class="content container" style="padding-top: 1cm">
-    <div class="row" id="xz">
-    {% if list_of_references %}
-        {% for reference in list_of_references %}
-        <div class="col-sm-6 col-md-4">
-  			<div class="thumbnail" style="border: 0px">
-        <a href="{{ reference.link }}"><img style="height: 100px; width:100px" src="{{ reference.image.url }}"></a>
-            <div class="caption">
-  						<h4 style="text-align: center; font-size: 20px"><a style="color: #000000" href="{{ reference.link }}">{{ reference.name }}</a></h4>
-  						<p style="text-align: center">{{ reference.description }}</p>
-  					</div>
-        </div>
-        </div>
-        {% endfor %}
+<div class="container" style="padding-top: 1cm">
+  <h3>Nasi odberatele:</h3>
+  <hr >
+    <div class="row" >
 
-    {% else %}
-        <p>No references are available.</p>
-    {% endif %}
+      {% if list_of_references %}
+          {% for reference in list_of_references %}
+          <div class="col-md-4 col-sm-6" style="margin-bottom:20px">
+          <div class="media">
+              <div class="pull-left">
+                  <span>
+                        <a href="{{ reference.link }}"><img style="height: 60px; width:60px" src="{{ reference.image.url }}"></a>
+                  </span>
+              </div>
+              <div class="media-body">
+                  <a href="{{ reference.link }}"><h4 class="media-heading">{{ reference.name }}</h4></a>
+                  <p>{{ reference.description }}</p>
+              </div>
+          </div>
+          </div>
+          {% endfor %}
+
+      {% else %}
+          <p>No references are available.</p>
+      {% endif %}
+
 
     </div>
     </div>
+
 {% endblock %}

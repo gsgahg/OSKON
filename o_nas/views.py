@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
 from .models import Gallery, Reference
+from .forms import KontaktForm
 
 def index(request):
     template = loader.get_template('o_nas/index.html')
@@ -9,9 +10,23 @@ def index(request):
     return render(request, 'o_nas/index.html', context)
 
 def kontakt(request):
-    template=loader.get_template('o_nas/kontakt.html')
-    context = {}
+    template = loader.get_template('o_nas/kontakt.html')
+    if request.method == 'POST':
+        form = KontaktForm(request.POST)
+        if form.is_valid():
+            subject = form.cleaned_data['subject']
+            message = form.cleaned_data['message']
+            email = form.cleaned_data['email']
+            tel = form.cleaned_data['tel']
+            print('yay:)')
+    else:
+        form = KontaktForm()
+    context = {'form':form}
     return render(request, 'o_nas/kontakt.html', context)
+
+
+
+
 
 def galerie(request):
     list_of_images = Gallery.objects.order_by('-pub_date')

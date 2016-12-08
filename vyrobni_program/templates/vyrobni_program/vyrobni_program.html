@@ -2,20 +2,23 @@
 
 {% block content %}
 
-<div class="content container" style="padding-top: 1cm">
-    <div class="row" id="xz">
+<div class="container" style="margin-top: 1cm">
+  <h3>Kategorie vyroby:</h3>
+  <hr>
+    <div class="row">
+
     {% if list_of_categories %}
         {% for category in list_of_categories %}
-        <div class="col-sm-6 col-md-4">
-  			<div class="thumbnail" id="index">
-        <a href="{% url 'vyrobni_program:detail' category.id %}"><img style="height: 200px; width:356px" src="{{ category.image.url }}"></a>
-            <div class="caption">
-  						<h4><a style="color: #000000" href="{% url 'vyrobni_program:detail' category.id %}">{{ category.name }}</a></h4>
+        <div class="col-lg-4  col-md-4 col-sm-6 col-xs-12" style="margin-bottom:20px">
+
+        <a href="{% url 'vyrobni_program:detail' category.id %}"><img class="img-responsive" src="{{ category.image.url }}"></a>
+
+  						<h3><a href="{% url 'vyrobni_program:detail' category.id %}">{{ category.name }}</a></h3>
   						<p>{{ category.short_description }}</p>
 
-  							<a class="btn btn-primary btn-xs" href="{% url 'vyrobni_program:detail' category.id %}"></span>Vice informaci</a>
-  					</div>
-        </div>
+  							<a class="btn btn-default btn-xs" href="{% url 'vyrobni_program:detail' category.id %}">Vice informaci</a>
+
+
         </div>
         {% endfor %}
 

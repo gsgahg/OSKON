@@ -1,41 +1,52 @@
 {% extends 'o_nas/base.html' %}
 
 {% block content %}
-  </nav>
-  <div class="content container">
-    <div class="row" style="padding: 0.2cm">
-        <a href="{% url 'vyrobni_program:vyrobni_program' %}">
-        <button class="btn btn-primary btn-md"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>  Zpet na vyrobni program</button>
-      </a>
-    </div>
-  </div>
-  <div class="content container">
+
+  <div class="container">
     <div class="row">
-      <div class="panel panel-default">
-        <div class="panel-heading">
+
+
           <h2>{{ category.name }}</h2>
-        </div>
-        <div class="panel-body">
+
+        <div>
           {{ category.long_description|safe }}
         </div>
       </div>
     </div>
-    </div>
-    <div class="content container">
-      <div class="row" id="xz">
-          {% for picture in listofpictures %}
-          <div class="col-sm-6 col-md-4">
-              <div class="thumbnail" id="MainImages">
-                <img class="myImg img-responsive" style="height: 200px; width: 356px" src="{{ picture.picture.url }}">
-                <div class="caption">
-                <p style="text-align: center; line-height: 10px">{{ picture.popis }}</p>
-              </div>
-              </div>
-                <div id="Fullscreen">
-                  <img src="" alt="" />
-                </div>
+
+    <div class="container">
+      {% for picture in listofpictures %}
+      <div class="row" style="margin-bottom:1cm">
+
+          <div class="col-md-7">
+                <img class="img-responsive" style="width:700px; height: 300px" src="{{ picture.picture.url }}">
+
+
           </div>
-          {% endfor %}
+          <div class="col-md-5">
+                <h3>{{ picture.name }}</h3>
+
+                <p>{{ picture.popis }}</p>
+
+          </div>
+
       </div>
+      {% endfor %}
     </div>
   {% endblock %}
+
+  <!--
+  <div class="row">
+      <div class="col-md-7">
+          <a href="portfolio-item.html">
+              <img class="img-responsive img-hover" src="http://placehold.it/700x300" alt="">
+          </a>
+      </div>
+      <div class="col-md-5">
+          <h3>Project One</h3>
+          <h4>Subheading</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+          <a class="btn btn-primary" href="portfolio-item.html">View Project</i></a>
+      </div>
+  </div>
+  -->

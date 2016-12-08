@@ -29,7 +29,7 @@ class Picture(models.Model):
     picture = models.ImageField(null=True, blank=True)
     category = models.ForeignKey(Category)
     pub_date = models.DateTimeField('date published', null=True, blank=True)
-    popis = models.CharField(max_length=128, null=True, blank=True)
+    popis = models.TextField(null=True, blank=True)
 
     def __str__(self):
         return str(self.name)
